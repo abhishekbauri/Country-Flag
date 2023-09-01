@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form input{
+    width: 100%;
+    height: 7vh;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+form input:focus{
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form label{
+    width: 100%;
+    padding: 0rem 2rem 2rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-link {
-  color: #61dafb;
+.innerContainer{
+    width: 96%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 600px){
+    form{
+        width: 90%;
+    }
+
+    form label{
+        font-size: 1.4rem;
+        padding: 0 1rem 2rem;
+    }
 }

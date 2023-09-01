@@ -1,0 +1,101 @@
+.outerCard{
+    width: 22%;
+    height: 450px;
+    margin: 2rem 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px #9e9b9b;
+    transition: all 0.5s linear;
+}
+
+.outerCard:hover{
+    box-shadow: 10px 10px 5px #4e4d4d;
+    transform: scale(1.05);
+}
+
+.flag{
+    width: 100%;
+    height: 250px;
+}
+
+.flag img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.innerCard{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.countryInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countryInfo h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.countryInfo p{
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.otherDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.otherDetails span{
+    font-weight: bold;
+    font-style: italic;
+}
+.otherDetails p{
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px){
+    .outerCard{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 550px){
+    .outerCard{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .outerCard{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .outerCard{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .outerCard{
+        width: 22%;
+    }
+}
